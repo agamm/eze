@@ -1,13 +1,14 @@
-# velocity
-Velocity brings your development up to speed with a minimalist set of commonly used functions.
+# flick
+Flick brings your development up to speed with a minimalist set of commonly used functions.
+flick is the minimalist pocket knife for all your pythong needs.
 
 ## TODO:
 - add examples for each function, and a link to the implementation for usage outside of the lib.
 
 ## Usage
-`pip install velocity`  
+`pip install flick`  
 
-`import velocity as vc`
+`from flick import *`
 
 ### Strings
 - `b64` - base 64 encodes to a string (no bytes needed!)
