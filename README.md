@@ -10,7 +10,7 @@ flick is the minimalist pocket knife for all your pythong needs.
 
 `from flick import *`
 
-### Strings
+### Strings / JSON & CSV
 - `b64` - base 64 encodes to a string (no bytes needed!)
 - `b64d` - base 64 decodes a string/byte
 - `s` - to string
@@ -21,6 +21,8 @@ match = regex(r'hello (.*?)', 'hello world') # (' world', (' world'))
 ```
 - `json` - json encode 
 - `jsond` - json decode
+- `csv` - dict/list to csv
+- `csvd` - decode a csv file/string into a dict.
 
 ### IO
 - `write` - write something to a file
