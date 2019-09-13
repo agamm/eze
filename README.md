@@ -1,5 +1,5 @@
 # flick
-Flick brings your development up to speed with a minimalist set of commonly used functions.
+Flick brings your development up to speed with a minimalist set of commonly used functions. And **no extra dependencies** required!
 
 ## TODO:
 - add examples for each function, and a link to the implementation for usage outside of the lib.
