@@ -1,14 +1,14 @@
 """
-flick.py Library
+eze.py Library
 ~~~~~~~~~~~~~~~~~~~~~
 Modern minimalist python 3+ pocket knife.
 
 Basic example usage:
-   >>> import flick as f
+   >>> import eze as e
    >>> urls = ['https://google.com/humans.txt', 'https://twitter.com/robots.txt']
    >>> def fetch_that(url):
         print(requests.get(url).text)
-   >>> f.together(fetch_that, urls), {
+   >>> e.together(fetch_that, urls), {
         'tasks': 2, // how many tasks to run together?
         'done': lambda x: print('Done fetching!')
         })

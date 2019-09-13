@@ -1,16 +1,16 @@
-# flick
+# eze
 A super simple library for common tasks in python 3. 
-- **No extra dependencies** required, you can go use `flick.py`and that's it!
+- **No extra dependencies** required, you can go use `eze.py`and that's it!
 - Great for scripting something fast.
-- You are free to copy implementations for specific functions (see `get_flick`).
+- You are free to copy implementations for specific functions (see `get_eze`).
 
 ## TODO:
 - add examples for each function, and a link to the implementation for usage outside of the lib.
 
 ## Usage
-`pip install flick`  
+`pip install eze`  
 
-`import flick as f`
+`import eze as e`
 
 ### Strings / JSON & CSV
 - `b64` - base 64 encodes to a string (no bytes needed!)
@@ -19,7 +19,7 @@ A super simple library for common tasks in python 3.
 - `b` - to bytes
 - `regex` - match
 ```Example
-match = f.regex(r'hello (.*?)', 'hello world') # (' world', (' world'))
+match = e.regex(r'hello (.*?)', 'hello world') # (' world', (' world'))
 ```
 - `json` - json encode 
 - `jsond` - json decode
@@ -49,7 +49,7 @@ match = f.regex(r'hello (.*?)', 'hello world') # (' world', (' world'))
 - `import` - imports a python file during runtime
 ```Example
 module = input('What module do you want?')
-f.import(module)
+e.import(module)
 # Use `module` functions
 ```
 - `show_loaded` - shows the currently loaded modules.
@@ -64,12 +64,12 @@ def fetch_that(url):
   print(requests.get(url).text)
  
 # together executes 
-f.together(fetch_that, ['https://google.com', 'https://facebook.com'], {
+e.together(fetch_that, ['https://google.com', 'https://facebook.com'], {
   'tasks': 4,
   'done': done_callback
 })
 ```
 
 ### Misc
-- `get_flick` - prints out the implementation of a function here for production usage (without extra flick code).
+- `get_eze` - prints out the implementation of a function here for production usage (without extra eze code).
 - `disable` - disables all of velocity's functions - for production usage.
