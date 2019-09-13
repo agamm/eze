@@ -62,7 +62,7 @@ def fetch_that(url):
   print(requests.get(url).text)
  
 # together executes 
-f.together(fetch_that, (url for url in ['https://google.com', 'https://facebook.com']), {
+f.together(fetch_that, ['https://google.com', 'https://facebook.com'], {
   'tasks': 4,
   'done': done_callback
 })
