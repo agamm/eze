@@ -1,6 +1,5 @@
 # flick
 Flick brings your development up to speed with a minimalist set of commonly used functions.
-flick is the minimalist pocket knife for all your pythong needs.
 
 ## TODO:
 - add examples for each function, and a link to the implementation for usage outside of the lib.
@@ -29,16 +28,16 @@ match = f.regex(r'hello (.*?)', 'hello world') # (' world', (' world'))
 - `read` - read something from a file
 
 ### Runtime
-- `eq` - checks if 2 vars/objects/classes are the same in memeory (might be used for something else)
-- `stack` - gets the stack up to here in a human readable fasion.
-- `dir` - shows all of the uninhereted functions of an object (no need to see `__init_subclass__`)
-- `break` - poorman's break point - will exit and print the current varaibles in a human readable fasion.
+- `eq` - checks if two vars/objects/classes are the same in-memory (might be used for something else)
+- `stack` - gets the stack up to here in a human-readable fashion.
+- `dir` - shows all of the inherited functions of an object (no need to see `__init_subclass__`)
+- `break` - poor man's breakpoint - will exit and print the current variables in a human-readable fashion.
 - `@timeit` decorator - prints the seconds it took to run a function.
 - `get_time` - returns the seconds it took to run a function.
 
 ### Printing things
 - `pp`/`pretty_print` - pretty print objects/classes/functions.
-- `nl`/`new_line` - craete a new line string for terminal usage
+- `nl`/`new_line` - create a new line string for terminal usage
 - `tbl`/`table` - create an ascii table and print it out of lists/generators.
 - `diff` - show the difference between vars/functions/classes/objects can also be colored.
 
