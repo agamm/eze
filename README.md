@@ -1,5 +1,8 @@
 # flick
-Flick brings your development up to speed with a minimalist set of commonly used functions.
+A super simple library for common tasks in python 3. 
+- **No extra dependencies** required, you can go use `flick.py`and that's it!
+- Great for scripting something fast.
+- You are free to copy implementations for specific functions (see `get_flick`).
 
 ## TODO:
 - add examples for each function, and a link to the implementation for usage outside of the lib.
@@ -68,4 +71,5 @@ f.together(fetch_that, ['https://google.com', 'https://facebook.com'], {
 ```
 
 ### Misc
+- `get_flick` - prints out the implementation of a function here for production usage (without extra flick code).
 - `disable` - disables all of velocity's functions - for production usage.
