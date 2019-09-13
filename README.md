@@ -8,7 +8,7 @@ flick is the minimalist pocket knife for all your pythong needs.
 ## Usage
 `pip install flick`  
 
-`from flick import *`
+`import flick as f`
 
 ### Strings / JSON & CSV
 - `b64` - base 64 encodes to a string (no bytes needed!)
@@ -17,7 +17,7 @@ flick is the minimalist pocket knife for all your pythong needs.
 - `b` - to bytes
 - `regex` - match
 ```Example
-match = regex(r'hello (.*?)', 'hello world') # (' world', (' world'))
+match = f.regex(r'hello (.*?)', 'hello world') # (' world', (' world'))
 ```
 - `json` - json encode 
 - `jsond` - json decode
@@ -33,6 +33,8 @@ match = regex(r'hello (.*?)', 'hello world') # (' world', (' world'))
 - `stack` - gets the stack up to here in a human readable fasion.
 - `dir` - shows all of the uninhereted functions of an object (no need to see `__init_subclass__`)
 - `break` - poorman's break point - will exit and print the current varaibles in a human readable fasion.
+- `@timeit` decorator - prints the seconds it took to run a function.
+- `get_time` - returns the seconds it took to run a function.
 
 ### Printing things
 - `pp`/`pretty_print` - pretty print objects/classes/functions.
@@ -45,7 +47,7 @@ match = regex(r'hello (.*?)', 'hello world') # (' world', (' world'))
 - `import` - imports a python file during runtime
 ```Example
 module = input('What module do you want?')
-import(module)
+f.import(module)
 # Use `module` functions
 ```
 - `show_loaded` - shows the currently loaded modules.
@@ -60,7 +62,7 @@ def fetch_that(url):
   print(requests.get(url).text)
  
 # together executes 
-together(fetch_that, (url for url in ['https://google.com', 'https://facebook.com']), {
+f.together(fetch_that, (url for url in ['https://google.com', 'https://facebook.com']), {
   'tasks': 4,
   'done': done_callback
 })
