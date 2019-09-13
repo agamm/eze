@@ -1,4 +1,9 @@
 # eze
+
+![Work in progress](https://img.shields.io/badge/-Work%20in%20progress-orange)
+![Versions](https://img.shields.io/pypi/pyversions/eze)
+![MIT](https://img.shields.io/pypi/l/eze)
+
 A super simple library for common tasks in python 3. 
 - **No extra dependencies** required, you can go use `eze.py`and that's it!
 - Great for scripting something fast.
