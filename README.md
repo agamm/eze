@@ -8,6 +8,7 @@ A super simple library for common tasks in python 3.
 - **No extra dependencies** required, you can go use `eze.py`and that's it!
 - Great for scripting something fast.
 - You are free to copy implementations for specific functions (see `get_eze`).
+- Qucik debbugging functions (see `Runtime` and `Printing things`)
 
 ## TODO:
 - add examples for each function, and a link to the implementation for usage outside of the lib.
